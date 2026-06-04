@@ -349,7 +349,6 @@
       <p class="lead">Una experiencia visual para contar cómo un prototipo pasa de bocetos y pruebas imperfectas a una solución Braille más calibrada, accesible y replicable.</p>
       <div class="heroActions">
         <button class="btn" onclick="document.querySelector('#historia').scrollIntoView({behavior:'smooth'})">Iniciar recorrido</button>
-        <button class="btn alt" onclick="document.querySelector('#video').scrollIntoView({behavior:'smooth'})">Ver guion</button>
       </div>
       <div class="heroPanel">
         <div>
@@ -390,23 +389,23 @@
 </div>
 
 <div class="result">
-<h3>⌨️ Perkins Brailler</h3>
+<h3>Perkins Brailler</h3>
 <p><strong>Funciona:</strong> velocidad, precisión y uso educativo.</p>
 <p><strong>No funciona tan bien:</strong> tamaño, peso y costo.</p>
 <p><strong>Aprendizaje:</strong> los mecanismos físicos guiados mejoran consistencia del relieve. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Perkins_Brailler?utm_source=chatgpt.com))</p>
 </div>
 
 <div class="result">
-<h3>🖨️ Embossers Braille</h3>
+<h3>Embossers Braille</h3>
 <p><strong>Funciona:</strong> producción rápida y automatizada.</p>
 <p><strong>No funciona tan bien:</strong> mantenimiento, software y dependencia eléctrica.</p>
-<p><strong>Aprendizaje:</strong> automatizar aumenta velocidad pero eleva complejidad técnica. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Braille_embosser?utm_source=chatgpt.com))</p>
+<p><strong>Aprendizaje:</strong> automatizar aumenta velocidad pero eleva complejidad técnica. ([en.wikipedia.org](https:https://brailler.perkins.org/pages/perkins-brailler))</p>
 </div>
 
 <div class="result good">
-<h3>🧩 Oportunidad del proyecto</h3>
-<p>Combinar modularidad, fabricación local, impresión 3D y ajustes de presión/altura.</p>
-<p><strong>Objetivo:</strong> una solución intermedia entre herramientas básicas y equipos especializados.</p>
+<h3>Oportunidad del proyecto</h3>
+<p>Combina modularidad, fabricación local, impresión 3D y ajustes de presión/altura.</p>
+<p><strong>Objetivo:</strong> diseñat una solución intermedia entre herramientas básicas y equipos especializados.</p>
 </div>
 </div>
 
@@ -425,7 +424,7 @@
 <section id="historia">
     <div class="wrap">
       <h2 class="title">Del boceto al prototipo funcional</h2>
-      <p class="subtitle">La narrativa se organiza como investigación-creación: cada error se convierte en evidencia, cada prueba en aprendizaje y cada ajuste en avance técnico.</p>
+      <p class="subtitle">Investigación-creación: cada error se convierte en evidencia, cada prueba en aprendizaje y cada ajuste en avance técnico.</p>
 
       <div class="timeline">
         <div class="step">
@@ -475,8 +474,8 @@
   <section id="lab">
     <div class="wrap prototype">
       <div>
-        <h2 class="title">Laboratorio interactivo + modo Rayos X</h2>
-        <p class="subtitle">Escribe palabras, inserta bastones virtuales y observa el funcionamiento interno. El modo Rayos X permite ver la prensa, el papel y cómo los bastones atraviesan la matriz para generar el relieve Braille.</p>
+        <h2 class="title">Laboratorio interactivo</h2>
+        <p class="subtitle">Escribe palabras, inserta bastones virtuales y observa el funcionamiento interno. Este modo permite ver la prensa, el papel y cómo los bastones atraviesan la matriz para generar el relieve Braille.</p>
         <div class="controls">
           <input id="wordInput" placeholder="Escribe una palabra..." style="padding:12px;border-radius:14px;border:1px solid #cfd9e2;font-size:1rem;min-width:220px">
           <button class="miniBtn" onclick="printWord()">Convertir</button>
@@ -508,9 +507,9 @@
 
   <section id="piezas">
     <div class="wrap">
-      <h2 class="title">Vista explotada de los prototipos</h2>
-      <p class="subtitle">Aquí los prototipos dejan de ser íconos: la vista muestra la evolución real de la máquina, desde pruebas de diámetro hasta una matriz modular de cavidades circulares donde se insertan los bastones/tipos.</p>
-      <div style="text-align:center;margin:25px 0"><button class="btn" onclick="explodeMachine()">Activar vista explotada 🚀</button></div>
+      <h2 class="title">Vista de los prototipos</h2>
+      <p class="subtitle">Aquí los prototipos dejan de ser íconos: la vista muestra la evolución real de la máquina, desde pruebas de diámetro hasta una matriz modular de cavidades donde se insertan los bastones/tipos.</p>
+      <div style="text-align:center;margin:25px 0"><button class="btn" onclick="explodeMachine()">Activar vista</button></div>
       <div id="explodeBox" class="prototypeExplode">
         <article class="protoCard iter1">
           <div class="protoLabel">Iteración 1</div>
@@ -567,8 +566,8 @@
 
 <section id="rayosxEvolucion">
 <div class="wrap">
-<h2 class="title">Rayos X interactivo: ¿qué pasa dentro de la máquina?</h2>
-<p class="subtitle">Estas vistas funcionan como el laboratorio: al presionar puedes observar por qué la presión y la forma del punzón modifican el resultado. El punzón no debe atravesar el papel en la condición óptima: lo empuja contra la matriz inferior para generar relieve. Solo con presión excesiva se muestra riesgo de ruptura.</p>
+<h2 class="title">Prototipo interactivo: ¿qué pasa dentro de la máquina?</h2>
+<p class="subtitle">Funciona como el laboratorio: al presionar puedes observar por qué la presión y la forma del punzón modifican el resultado. El punzón no debe atravesar el papel en la condición óptima: lo empuja contra la matriz inferior para generar relieve. Solo con presión excesiva se muestra riesgo de ruptura.</p>
 <div class="controls" style="margin-bottom:18px">
 <button class="miniBtn" onclick="togglePunch('flat')">Punta plana V1</button>
 <button class="miniBtn" onclick="togglePunch('round1')">Redondeada V2</button>
@@ -580,23 +579,9 @@
 <div class="card"><h3>Vista perspectiva</h3><div class="xrayPerspective"><div class="xmatrix"></div><div class="xpinGrid" id="pinGrid"></div></div><p><strong>Presión baja:</strong> poco relieve<br><strong>Presión alta:</strong> perforación<br><strong>Presión media + punta modificada:</strong> mejor equilibrio.</p></div>
 </div>
 </div>
-</section>
-
-  <section id="video">
-    <div class="wrap">
-      <h2 class="title">Guion visual para grabar el video</h2>
-      <p class="subtitle">Puedes grabar pantalla de esta misma infografía y narrar encima. La página funciona como escenografía interactiva.</p>
-      <div class="script">
-        <p><strong>Inicio:</strong> ¿Cómo diseñar una máquina Braille manual que pueda fabricarse, probarse y mejorarse con recursos accesibles?</p>
-        <p><strong>Proceso:</strong> Primero se desarrollaron bocetos y planos. Luego se probaron tolerancias entre el signo, el bastón y el papel. Después, las piezas se modelaron en 3D e imprimieron para evaluar su funcionamiento real.</p>
-        <p><strong>Problema técnico:</strong> Las primeras pruebas mostraron que algunos bastones rompían el papel o no quedaban firmes. Esto obligó a ajustar diámetros, alturas y materiales.</p>
-        <p><strong>Cierre:</strong> El prototipo permitió encontrar un mejor equilibrio entre presión, relieve y resistencia del papel, acercando la propuesta a una solución Braille manual, educativa y replicable.</p>
-      </div>
-    </div>
-  </section>
 
   <footer>
-    <p>Desarrollo patente diseño impresora manual Braille · Código 001_CE_2025_BO_04</p>
+    <p>Desarrollo patente diseño impresora manual Braille .</p>
   </footer>
 
   <script>
